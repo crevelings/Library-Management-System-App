@@ -1,0 +1,102 @@
+.dashboard-main {
+    -fx-padding: 20;
+    -fx-background-color: #f0f0f0;
+}
+
+.sidebar {
+    -fx-background-color: #8A2BE2FF;
+    -fx-padding: 10;
+}
+
+.sidebar-label {
+    -fx-font-size: 20px;
+    -fx-text-fill: #fff;
+}
+
+.sidebar-button {
+    -fx-background-color: #ffcc00;
+    -fx-text-fill: #333;
+    -fx-font-weight: bold;
+    -fx-padding: 10 15;
+    -fx-background-radius: 8;
+    -fx-margin: 10;
+}
+
+.dashboard-panels {
+    -fx-background-color: #fff;
+    -fx-padding: 20;
+    -fx-border-radius: 20;
+}
+
+.panel {
+    -fx-background-color: #f0f0f0;
+    -fx-padding: 20;
+    -fx-border-radius: 10;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.25), 10, 0, 0, 0);
+}
+
+.bookList-panel {
+    -fx-background-color: #66c2ff;
+}
+
+.members-panel {
+    -fx-background-color: #66ff66;
+}
+
+.librarians-panel {
+    -fx-background-color: #ff9966;
+}
+
+.returnBook-panel {
+    -fx-background-color: #ff6666;
+}
+
+.Loans-panel {
+    -fx-background-color: #cc66ff;
+}
+
+.overdueBooks-panel {
+    -fx-background-color: #ff0000;
+}
+
+.date-panel {
+    -fx-background-color: #ffcc00;
+}
+
+.panel-title {
+    -fx-font-size: 18px;
+    -fx-text-fill: #fff;
+}
+
+.panel-count {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333;
+}
+
+.librarian-welcome {
+    /* Layout */
+    -fx-padding: 20px;
+    -fx-margin: 20px 0;
+    -fx-background-color: #f5f7fa;
+    -fx-border-color: #3498db transparent transparent transparent;
+    -fx-border-width: 0 0 0 5px;
+    -fx-border-radius: 8px;
+
+    /* Typography */
+    -fx-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    -fx-font-size: 18px;
+    -fx-font-weight: 600;
+    -fx-text-alignment: center;
+
+    /* Effect */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 8, 0, 0, 4);
+
+    /* Transition (JavaFX lacks direct hover transitions) */
+    -fx-transition: all 0.3s ease-in-out;
+}
+
+.librarian-welcome:hover {
+    -fx-translate-y: -3px; /* Simulates the element "lifting" */
+    -fx-background-color: #eaf2f8; /* Slightly changes background color on hover */
+}

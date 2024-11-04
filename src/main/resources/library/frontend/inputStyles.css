@@ -1,0 +1,66 @@
+/* Background for the entire StackPane */
+.background-pane {
+    -fx-background-color: #e0e0e0; /* Light gray background for the entire view */
+}
+
+/* Container for the form, centers it with some padding */
+.form-container {
+    -fx-padding: 40;
+    -fx-alignment: center;
+}
+
+/* Style for the main GridPane */
+.input-panel {
+    -fx-background-color: #ffffff; /* White background for the form */
+    -fx-padding: 20;
+    -fx-border-color: #d0d0d5;
+    -fx-border-width: 2;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+}
+
+/* Header label style */
+.header-label {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+    -fx-padding: 10 0 20 0;
+}
+
+/* Input field styling */
+.input-field {
+    -fx-prompt-text-fill: #b0b0b0;
+    -fx-background-color: #ffffff;
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-padding: 5;
+}
+
+/* Primary button styling */
+.primary-button {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-padding: 10 20 10 20;
+}
+
+.primary-button:hover {
+    -fx-background-color: #45a049;
+}
+
+/* Secondary button styling */
+.secondary-button {
+    -fx-background-color: #f44336;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-padding: 10 20 10 20;
+}
+
+.secondary-button:hover {
+    -fx-background-color: #d32f2f;
+}

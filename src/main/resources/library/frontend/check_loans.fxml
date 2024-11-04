@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="library.frontend.CheckLoansController"
+      alignment="center" spacing="10" prefWidth="600" prefHeight="400"
+      stylesheets="@listbooks.css" styleClass="vbox">
+    <HBox spacing="15" alignment="CENTER" styleClass="listBox">
+        <Label text="Loans" styleClass="listLabel"/>
+    </HBox>
+
+    <TableView fx:id="bookLoansTable" prefWidth="580" prefHeight="550" styleClass="table-view">
+        <columns>
+            <TableColumn text="Loan ID" fx:id="loanIDColumn" prefWidth="200" styleClass="table-column"/>
+            <TableColumn text="ISBN" fx:id="isbnColumn" prefWidth="200" styleClass="table-column"/>
+            <TableColumn text="User ID" fx:id="userIDColumn" prefWidth="200" styleClass="table-column"/>
+            <TableColumn text="Borrow Date" fx:id="borrowDateColumn" prefWidth="200" styleClass="table-column"/>
+            <TableColumn text="Due Date" fx:id="dueDateColumn" prefWidth="200" styleClass="table-column"/>
+        </columns>
+    </TableView>
+    <Button text="Back to Dashboard" onAction="#handleBackToDashboard" styleClass="button"/>
+</VBox>
