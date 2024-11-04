@@ -1,0 +1,64 @@
+/* General Background */
+.background-layer {
+    -fx-background-color: linear-gradient(to bottom right, #8A2BE2, #4B0082);
+}
+
+/* Login Panel Styling */
+.login-panel {
+    -fx-background-color: white;
+    -fx-padding: 30;
+    -fx-border-radius: 20;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0.5, 0, 0);
+}
+
+/* Header Text Styling */
+.login-header {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #4B0082;
+}
+
+/* Input Group Styling */
+.input-group {
+    -fx-background-color: #F0F0F0;
+    -fx-padding: 10;
+    -fx-border-radius: 10;
+}
+
+.input-icon {
+    -fx-font-size: 18px;
+    -fx-text-fill: #8A2BE2;
+}
+
+.TextField, .PasswordField {
+    -fx-background-color: transparent;
+    -fx-border: none;
+    -fx-font-size: 14px;
+}
+
+/* Login Button Styling */
+.login-button {
+    -fx-background-color: #4B0082;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 20;
+    -fx-padding: 10 30;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 10, 0.5, 0, 0);
+}
+
+.login-button:hover {
+    -fx-background-color: #8A2BE2;
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+    -fx-transition: 0.3s ease-in-out;
+}
+
+.social-header {
+    -fx-font-size: 14px;
+    -fx-text-fill: #8A2BE2;
+}
+
+.social-icon {
+    -fx-font-size: 24px;
+    -fx-text-fill: #4B0082;
+}

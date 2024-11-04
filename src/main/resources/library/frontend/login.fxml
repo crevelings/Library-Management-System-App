@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane xmlns:fx="http://javafx.com/fxml" fx:controller="library.frontend.LoginController" stylesheets="@loginStyles.css">
+    <VBox styleClass="background-layer">
+        <VBox alignment="CENTER" spacing="20"  prefHeight="550" styleClass="login-panel">
+            <Label text="Librarian Login" styleClass="login-header"/>
+
+            <HBox alignment="CENTER" spacing="10" styleClass="input-group">
+                <Label text="👤" styleClass="input-icon"/>
+                <TextField fx:id="usernameField" promptText="User name / Email" />
+            </HBox>
+
+            <HBox alignment="CENTER" spacing="10" styleClass="input-group">
+                <Label text="🔒" styleClass="input-icon"/>
+                <PasswordField fx:id="passwordField" promptText="Password" />
+            </HBox>
+
+            <Button text="LOG IN NOW" onAction="#handleLogin" styleClass="login-button"/>
+
+            <Label fx:id="errorLabel" textFill="red" />
+            <VBox alignment="CENTER">
+                <Label text="For Questions Contact Via" styleClass="social-header"/>
+                <HBox spacing="15" alignment="CENTER">
+                    <Label text="🌐" styleClass="social-icon"/>
+                    <Label text="📧" styleClass="social-icon"/>
+                    <Label text="📞" styleClass="social-icon"/>
+                </HBox>
+            </VBox>
+        </VBox>
+    </VBox>
+</StackPane>
+
