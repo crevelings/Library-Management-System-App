@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<StackPane xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1"
+           stylesheets="@inputStyles.css" fx:controller="library.frontend.AddBookController" styleClass="background-pane">
+    <!-- Background and padding for the AddBook form -->
+    <VBox alignment="CENTER" spacing="20" styleClass="form-container">
+        <GridPane alignment="center" hgap="10" vgap="10" styleClass="input-panel">
+            <Label text="Add New Book" GridPane.columnIndex="1" GridPane.rowIndex="0" styleClass="header-label">
+                <font>
+                    <Font size="24.0" />
+                </font>
+            </Label>
+
+            <Label text="Title:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+            <TextField fx:id="titleField" promptText="Enter Book Title" GridPane.columnIndex="1" GridPane.rowIndex="1" styleClass="input-field" />
+
+            <Label text="Author:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+            <TextField fx:id="authorField" promptText="Enter Book Author" GridPane.columnIndex="1" GridPane.rowIndex="2" styleClass="input-field" />
+
+            <Label text="ISBN:" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+            <TextField fx:id="isbnField" promptText="Enter Book ISBN" GridPane.columnIndex="1" GridPane.rowIndex="3" styleClass="input-field" />
+
+            <Button onAction="#handleAddBook" text="Add Book" GridPane.columnIndex="1" GridPane.rowIndex="4" styleClass="primary-button"/>
+            <Button onAction="#handleBackToDashboard" text="Back to Dashboard" GridPane.columnIndex="1" GridPane.rowIndex="5" styleClass="secondary-button" />
+
+            <columnConstraints>
+                <ColumnConstraints minWidth="100.0" />
+                <ColumnConstraints minWidth="200.0" />
+            </columnConstraints>
+
+            <rowConstraints>
+                <RowConstraints minHeight="40.0" />
+                <RowConstraints minHeight="40.0" />
+                <RowConstraints minHeight="40.0" />
+                <RowConstraints minHeight="40.0" />
+                <RowConstraints minHeight="50.0" />
+            </rowConstraints>
+        </GridPane>
+    </VBox>
+</StackPane>

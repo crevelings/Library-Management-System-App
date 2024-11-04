@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<StackPane xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1"
+           stylesheets="@inputStyles.css" fx:controller="library.frontend.AddLibrarianController"
+           styleClass="background-pane">
+    <VBox alignment="CENTER" spacing="20" styleClass="form-container">
+        <GridPane alignment="center" hgap="10" vgap="10" styleClass="input-panel">
+
+            <Label text="Add Librarian" GridPane.columnIndex="1" GridPane.rowIndex="0" styleClass="header-label">
+                <font>
+                    <Font size="24.0"/>
+                </font>
+            </Label>
+
+            <Label text="Librarian Username:" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+            <TextField fx:id="usernameField" promptText="Enter New Librarian's Name" GridPane.columnIndex="1" GridPane.rowIndex="1"
+                       styleClass="input-field"/>
+            <Label text="Librarian Password:" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+            <PasswordField fx:id="passwordField" promptText="Enter New Librarian's Password" GridPane.columnIndex="1" GridPane.rowIndex="2"
+                       styleClass="input-field"/>
+
+            <Button onAction="#handleAddLibrarian" text="Add Librarian" GridPane.columnIndex="1" GridPane.rowIndex="3"
+                    styleClass="primary-button"/>
+            <Button onAction="#handleBackToDashboard" text="Back to Dashboard" GridPane.columnIndex="1"
+                    GridPane.rowIndex="6" styleClass="secondary-button"/>
+        </GridPane>
+    </VBox>
+</StackPane>
