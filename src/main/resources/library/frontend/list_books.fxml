@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="library.frontend.ListBooksController"
+      alignment="center" spacing="10" prefWidth="600" prefHeight="400"
+      stylesheets="@listbooks.css" styleClass="vbox">
+    <HBox spacing="15" alignment="CENTER" styleClass="listBox">
+        <Label text="List Of Books" styleClass="listLabel"/>
+    </HBox>
+
+    <TableView fx:id="booksTable" prefWidth="580" prefHeight="550" styleClass="table-view">
+        <columns>
+            <TableColumn text="Title" fx:id="titleColumn" prefWidth="250" styleClass="table-column"/>
+            <TableColumn text="Author" fx:id="authorColumn" prefWidth="250" styleClass="table-column"/>
+            <TableColumn text="ISBN" fx:id="isbnColumn" prefWidth="250" styleClass="table-column"/>
+            <TableColumn text="Copies" fx:id="copiesColumn" prefWidth="250" styleClass="table-column"/>
+        </columns>
+    </TableView>
+
+    <Button text="Back to Dashboard" onAction="#handleBackToDashboard" styleClass="button"/>
+</VBox>

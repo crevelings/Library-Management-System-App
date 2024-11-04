@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+
+<HBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="library.frontend.DashboardController"
+      spacing="20" stylesheets="@dashBoardStyles.css" styleClass="dashboard-main">
+
+    <!-- Sidebar -->
+    <VBox spacing="15" prefWidth="250.0" styleClass="sidebar">
+        <Label text="Dashboard" styleClass="sidebar-label"/>
+        <Button text="List of Books" onAction="#handleListBooks" styleClass="sidebar-button"/>
+        <Button text="Add Book" onAction="#handleAddBook" styleClass="sidebar-button"/>
+        <Button text="Issue Book" onAction="#handleIssueBook" styleClass="sidebar-button"/>
+        <Button text="Return Book" onAction="#handleReturnBook" styleClass="sidebar-button"/>
+        <Button text="Check Loans" onAction="#handleCheckLoans" styleClass="sidebar-button"/>
+        <Button text="Check Overdue Books" onAction="#handleOverdueBooks" styleClass="sidebar-button"/>
+        <Button text="Add User" onAction="#handleAddUser" styleClass="sidebar-button"/>
+        <Button text="Add Librarian" onAction="#handleAddLibrarian" styleClass="sidebar-button"/>
+        <Button text="Exit" onAction="#handleExit" styleClass="sidebar-button"/>
+        <ImageView fitWidth="225" fitHeight="175">
+            <Image url="@library.jpeg"/>
+        </ImageView>
+    </VBox>
+
+    <!-- Main Dashboard -->
+    <VBox styleClass="dashboard-panels" spacing="20" alignment="CENTER">
+        <Label fx:id="librarianNameLabel" styleClass="librarian-welcome" text="Welcome, !"/>
+        <HBox spacing="15" alignment="CENTER" prefWidth="675.0">
+            <!-- Number Of Books Panel -->
+            <VBox styleClass="bookList-panel" alignment="CENTER">
+                <ImageView fitWidth="50" fitHeight="50">
+                <Image url="@book.png"/>
+                </ImageView>
+                <Label text="Number of Books" styleClass="panel-title"/>
+                <Label fx:id="bookCountLabel" styleClass="panel-count"/>
+            </VBox>
+
+            <!-- Number of Members Panel -->
+            <VBox styleClass="members-panel" alignment="CENTER">
+                <ImageView fitWidth="50" fitHeight="50">
+                    <Image url="@people.png"/>
+                </ImageView>
+                <Label text="Number of Members" styleClass="panel-title"/>
+                <Label fx:id="userCountLabel" styleClass="panel-count"/>
+            </VBox>
+
+            <!-- Number of Librarians Panel -->
+            <VBox styleClass="librarians-panel" alignment="CENTER">
+                <ImageView fitWidth="50" fitHeight="50">
+                    <Image url="@librarian.png"/>
+                </ImageView>
+                <Label text="Number of Librarians" styleClass="panel-title"/>
+                <Label fx:id="librarianCountLabel" styleClass="panel-count"/>
+            </VBox>
+        </HBox>
+
+        <HBox spacing="15" alignment="CENTER" prefWidth="675.0">
+            <!-- Number of Loans Panel -->
+            <VBox styleClass="Loans-panel" alignment="CENTER">
+                <ImageView fitWidth="50" fitHeight="50">
+                    <Image url="@loan.png"/>
+                </ImageView>
+                <Label text="Number of Loans" styleClass="panel-title"/>
+                <Label fx:id="loanCountLabel" styleClass="panel-count"/>
+            </VBox>
+
+            <!-- Check Overdue Books Panel -->
+            <VBox styleClass="overdueBooks-panel" alignment="CENTER">
+                <ImageView fitWidth="50" fitHeight="50">
+                    <Image url="@overdue.png"/>
+                </ImageView>
+                <Label text="Number of Overdue Books" styleClass="panel-title"/>
+                <Label fx:id="overdueBookCountLabel" styleClass="panel-count"/>
+            </VBox>
+
+            <!-- Date Panel -->
+            <VBox styleClass="date-panel" alignment="CENTER">
+                <Label text="DATE TODAY" styleClass="panel-title"/>
+                <Label fx:id="dateLabel" styleClass="panel-count"/>
+            </VBox>
+        </HBox>
+    </VBox>
+</HBox>

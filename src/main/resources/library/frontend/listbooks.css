@@ -1,0 +1,61 @@
+/* Set a gradient background for the header */
+.table-view .column-header-background {
+    -fx-background-color: linear-gradient(to right, #5d2a94, #ae7c0d);
+}
+
+.table-view .column-header-background .label {
+    -fx-text-fill: white;          /* White text for headers */
+    -fx-font-weight: bold;         /* Bold font for header text */
+    -fx-font-size: 16px;           /* Increase font size */
+}
+
+/* Style for each cell */
+.table-view .table-cell {
+    -fx-background-color: #2c3e50;  /* Cell background color */
+    -fx-text-fill: #ecf0f1;         /* Text color for cells */
+    -fx-font-size: 14px;            /* Font size */
+    -fx-padding: 10px;              /* Padding around text */
+}
+
+/* Set row colors */
+.table-view .table-row-cell:odd {
+    -fx-background-color: #34495e;  /* Darker color for odd rows */
+}
+
+.table-view .table-row-cell:even {
+    -fx-background-color: #2c3e50;  /* Lighter color for even rows */
+}
+
+.table-column {
+    -fx-background-color: transparent; /* Use a transparent background for columns */
+}
+
+/* Button styling */
+.button {
+    -fx-background-color: #34e89e;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 10px 20px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+
+.button:hover {
+    -fx-background-color: #0f3443;
+}
+
+/* VBox (main container) styling */
+.vbox {
+    -fx-background-color: linear-gradient(to bottom, #19d996, #004c4c); /* Background gradient for VBox */
+    -fx-padding: 20px;  /* Padding around the VBox */
+}
+
+.listBox {
+    -fx-background-color: transparent; /* Use a transparent background for columns */
+}
+
+.listLabel {
+    -fx-font-size: 35px;
+    -fx-font-family: Georgia, Helvetica, sans-serif;
+    -fx-text-fill: rgb(93, 42, 148);
+}
