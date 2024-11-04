@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Label?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="library.frontend.OverdueBooksController"
+      alignment="center" spacing="10" prefWidth="600" prefHeight="400"
+      stylesheets="@listbooks.css" styleClass="vbox">
+    <HBox spacing="15" alignment="CENTER" styleClass="listBox">
+        <Label text="Overdue Books" styleClass="listLabel"/>
+    </HBox>
+
+    <TableView prefWidth="580" prefHeight="550" styleClass="table-view">
+        <columns>
+            <TableColumn fx:id="userColumn" text="User" prefWidth="333" styleClass="table-column"/>
+            <TableColumn fx:id="bookColumn" text="Book" prefWidth="333" styleClass="table-column"/>
+            <TableColumn fx:id="dueDateColumn" text="Due Date" prefWidth="334" styleClass="table-column"/>
+        </columns>
+    </TableView>
+    <Button text="Back to Dashboard" onAction="#handleBackToDashboard" styleClass="button"/>
+</VBox>
