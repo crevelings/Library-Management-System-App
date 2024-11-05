@@ -6,10 +6,10 @@ echo "Enter MySQL password:"
 read -s password
 
 # Create the database
-mysql -u $username -p$password -e "CREATE DATABASE IF NOT EXISTS your_database_name"
+mysql -u $username -p$password -e "CREATE DATABASE IF NOT EXISTS Library"
 
 # Import the schema and data
-mysql -u $username -p$password your_database_name < database/database_setup.sql
+mysql -u $username -p$password Library < database_setup.sql
 
 echo "Database setup completed."
 
