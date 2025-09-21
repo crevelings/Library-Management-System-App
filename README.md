@@ -13,14 +13,18 @@ This project requires a MySQL database. To set it up:
 2. Make sure the mysql-connector.jar file in the "lib" directory is added to the library.
 3. Run the setup script:
 
-   ```bash
-   ./setup_database.sh
+   ```shell
+   sh src/main/database/setup_database.sh
    ```
+4. Go into folder containing "DBConnection.java"
 
-4. Set up the following environment variables:
+    ```shell
+    cd src/main/java/library/backend
+   ```
+5. Set up the following environment variables in DBConnection.java:
    - `DB_USERNAME`: Your MySQL username
    - `DB_PASSWORD`: Your MySQL password
    - `DB_NAME`: Database name (e.g., `your_database_name`)
    - `DB_HOST`: Database host (e.g., `localhost`)
 
-5. Start the application through StartController. The database will be ready for use.
+6. Start the application through StartController. The database will be ready for use.
